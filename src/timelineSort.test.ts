@@ -9,13 +9,6 @@ const driver: WebDriver = new Builder()
 
 const gbp = new GOAT(driver);
 
-// describe("timeline toggle", async () => {
-//   beforeEach(async () => {
-//   //Click the Style tab at the top of the page 
-//   await gbp.navigate('https://www.goat.com/');
-//   }) 
-// });
-
   test("sort timeline", async () => {
     //navigate to homepage 
     await gbp.navigate(URL)
