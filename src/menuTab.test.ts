@@ -14,15 +14,11 @@ const gbp = new GOAT(driver);
     //navigate to homepage 
     await gbp.navigate(URL)
     await new Promise(resolve => setTimeout(resolve, 2000));
-    // await gbp.click(gbp.editorialRead)
-    // await new Promise(resolve => setTimeout(resolve, 5000));
-    //locate and click the menu button 
     await gbp.click(gbp.menuButton)
     await new Promise(resolve => setTimeout(resolve, 4000));
-    // //navigate to shop all 
+    //navigate to shop all 
     // await gbp.click(gbp.shopAll)
     // await new Promise(resolve => setTimeout(resolve, 2000));
-    
 });
 
 afterAll(async () => {
